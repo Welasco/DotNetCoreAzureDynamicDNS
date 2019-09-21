@@ -15,9 +15,9 @@ namespace DotNetCoreAzureDynamicDNS
     {
         static void Main(string[] args)
         {
-
+            var processname = System.Diagnostics.Process.GetCurrentProcess().ProcessName;
             Log.Logger = new LoggerConfiguration()
-                .WriteTo.File("DotNetCoreAzureDynamicDNS.log")
+                .WriteTo.File(processname+".log")
                 .CreateLogger();
 
             var serviceCollection = new ServiceCollection();
