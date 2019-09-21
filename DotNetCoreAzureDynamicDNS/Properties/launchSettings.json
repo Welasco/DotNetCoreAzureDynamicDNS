@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "DotNetCoreAzureDynamicDNS": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "AZUREDYNDNS_AZURESETTINGS__AZUREDNSZONE": "hepoca.com",
+        "AZUREDYNDNS_UPDATEINTERVAL": "1"
+      }
+    }
+  }
+}
